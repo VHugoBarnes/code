@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ykucwrSSdNbjfpm+OW89Ei3q0kkSLt9vOY6J2t2THG82bRqRpfSRpKUDs9IKFLg9ey7B04mJJB+bTC5dsEq/nw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hugov\\code\\net\\chapter05\\PacktLibrary\\PacktLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hugov\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\hugov\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,11 @@
+C:\Users\hugov\code\net\chapter04\Debugging\bin\Debug\netcoreapp3.1\Debugging.exe
+C:\Users\hugov\code\net\chapter04\Debugging\bin\Debug\netcoreapp3.1\Debugging.deps.json
+C:\Users\hugov\code\net\chapter04\Debugging\bin\Debug\netcoreapp3.1\Debugging.runtimeconfig.json
+C:\Users\hugov\code\net\chapter04\Debugging\bin\Debug\netcoreapp3.1\Debugging.runtimeconfig.dev.json
+C:\Users\hugov\code\net\chapter04\Debugging\bin\Debug\netcoreapp3.1\Debugging.dll
+C:\Users\hugov\code\net\chapter04\Debugging\bin\Debug\netcoreapp3.1\Debugging.pdb
+C:\Users\hugov\code\net\chapter04\Debugging\obj\Debug\netcoreapp3.1\Debugging.csprojAssemblyReference.cache
+C:\Users\hugov\code\net\chapter04\Debugging\obj\Debug\netcoreapp3.1\Debugging.csproj.CoreCompileInputs.cache
+C:\Users\hugov\code\net\chapter04\Debugging\obj\Debug\netcoreapp3.1\Debugging.dll
+C:\Users\hugov\code\net\chapter04\Debugging\obj\Debug\netcoreapp3.1\Debugging.pdb
+C:\Users\hugov\code\net\chapter04\Debugging\obj\Debug\netcoreapp3.1\Debugging.genruntimeconfig.cache
