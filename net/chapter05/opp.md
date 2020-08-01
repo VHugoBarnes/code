@@ -1,0 +1,14 @@
+# Hablando sobre la programación orientada a objetos
+
+Un objeto es una cosa de la vida real, como un carro o una persona, donde un objeto en programación a menudo representa algo de la vida real, como un producto o una cuenta de banco, pero esto también puede ser algo abstracto.   
+
+En C#, usamos las palabras clave de C# _class_ (principalmente) o _struct_ (a veces) para definir un tipo de objeto. Puedes imaginar un _type_ como un _blueprint_ o _modelo_ para un objeto.   
+
+Describiré brevemente los conceptos de la programación orientada a objetos.   
+
+- **Encapsulación** es la combinación de los datos y acciones que están relacionadas a un objeto. Por ejemplo, un tipo _BankAccount_ puede tener datos como, el _Balance_ y _AccountName_, también como acciones, como _Deposit_ y _Withdraw_. Cuando se encapsula, a menudo se quiere controlar quién tiene acceso a las acciones y datos, por ejemplo, restringir como el estado interno de un objeto puede ser accedido o modificado desde afuera.   
+- **Composición** es sobre de lo que está hecho un objeto. Por ejemplo, un automóvil está compuesto de diferentes partes, como cuatro ruedas, varios acientos, y un motor.   
+- **Agregación** es acerca de lo que se puede convinar con el objeto. Por ejemplo, una persona no es parte de un objeto automóvil, pero se pueden sentar en el asiento del conductor para volverse el conductor del automóvil. Dos objetos separados que son agregados juntos para formar un nuevo componente.
+- **Herencia** es sobre reutilizar código teniendo una subclase derivada de una clase **base** o **super**. Toda la funcionabilidad en la clase base es heredada y se vuelve disponible en la clase que derive. Por ejemplo, la _base_ o _super_ clase de `Exception` tiene algunos miembros que tienen la misma implementación a traves de todas las excepciones, y la sub-clase `SqlException` hereda de esos miembros y tiene miembros extra que sólo son relevantes cuando ocurre una excepción en la base de datos SQL como una propiedad para la conexión de la base de datos.
+- **Abstracción** es acerca de capturar el núcleo de la idea e ignorar los detalles especificos. C# tiene una palabra clave `abstract` que formaliza el concepto. Si una clase no es explícitamente `abstract` entonces puede ser descrita como concreta. Las clases _base_ o _super_ son a menudo abstractas, por ejemplo, la super-clase `Stream` es `abstract` y sus sub-clases `FileStream` y `MemoryStream` son concretas. La abstracción es un equilibrio complicado. Si haces a una clase más abstracta, más clases serán capaces de heredar de ella, pero al mismo tiempo tendrán menos funcionabilidad para compartir.
+- **Polimorfismo** es acerca de permitir que una clase derivada sobre-escriba una acción heredada para proporcionar comportamiento personalizado. 
