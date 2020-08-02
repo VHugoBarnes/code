@@ -2,7 +2,14 @@
 
 namespace Packt.Shared
 {
-    public class Person
+    public class Person : Object
     {
+
+        // fields 
+        public string Name;
+        public DateTime DateOfBirth;
+
+        
+
     }
 }
