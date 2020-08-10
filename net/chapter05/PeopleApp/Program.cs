@@ -42,6 +42,33 @@ namespace PeopleApp
 
             WriteLine($"{bob.Name}'s Bucket list is {bob.BucketList}");
 
+            bob.Children.Add(new Person {Name = "Alfred"});
+            bob.Children.Add(new Person {Name = "Zoe"});
+
+            for (int child = 0; child < bob.Children.Count; child++ ) {
+                WriteLine($"{bob.Children[child].Name}");
+            }
+
+            BankAccount.InterestRate = 0.012M;  // store a shared member
+
+            var jonesAccount = new BankAccount();
+            jonesAccount.AccountName = "Mrs. Jones";
+            jonesAccount.Balance = 2400;
+
+            WriteLine(format: "{0} earned {1:C} interest",
+            arg0: jonesAccount.AccountName,
+            arg1: jonesAccount.Balance * BankAccount.InterestRate);
+
+            var gerrierAccount = new BankAccount();
+            gerrierAccount.AccountName = "Ms. Gerrier";
+            gerrierAccount.Balance = 98;
+
+            WriteLine(format: "{0} earned {1:C} interest",
+            arg0: gerrierAccount.AccountName,
+            arg1: gerrierAccount.Balance * BankAccount.InterestRate);
+
+            WriteLine($"{bob.Name} is a {Person.Species}");
+
         }
     }
 }
