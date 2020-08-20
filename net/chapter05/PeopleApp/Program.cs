@@ -84,6 +84,57 @@ namespace PeopleApp
             arg1: gunny.HomePlanet,
             arg2: gunny.Instantiated);
 
+            bob.WriteToConsole();
+            WriteLine(bob.GetOrigin());
+
+            (string, int) fruit = bob.GetFruit();
+            WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
+
+            var fruitNamed = bob.GetNamedFruit();
+            WriteLine($"There are {fruitNamed.Number} {fruitNamed.Name}");
+
+            // Infering tuple names
+            var thing1 = ("Neville", 4);
+            WriteLine($"{thing1.Item1} has {thing1.Item2} children");
+
+            var thing2 = (bob.Name, bob.Children.Count);
+            WriteLine($"{thing2.Name} has {thing2.Count} children");
+
+            // Deconstructing tuples
+            (string fruitName, int fruitNumber) = bob.GetFruit();
+            WriteLine($"Deconstructed: {fruitName}, {fruitNumber}");
+
+            // Defining and passing parameters to methods
+            WriteLine(bob.SayHello());
+            WriteLine(bob.SayHello("Keko"));
+
+            // Passing optional parameters and naming arguments
+            WriteLine(bob.OptionalParameters());
+            WriteLine(bob.OptionalParameters("Jump!", 98.5));
+            WriteLine(bob.OptionalParameters(number: 52.7, command: "Hide!"));
+
+            // Controlling how parameters are passed
+            int a = 10;
+            int b = 20;
+            int c = 30;
+
+            WriteLine($"Before: a = {a}, b = {b}, c = {c}");
+
+            bob.PassingParameters(a, ref b, out c);
+
+            WriteLine($"After: a = {a}, b = {b}, c = {c}");
+
+            int d = 10;
+            int e = 20;
+
+            WriteLine(
+            $"Before: d = {d}, e = {e}, f doesn't exist yet!");
+
+            // simplified C# 7.0 syntax for the out parameter
+            bob.PassingParameters(d, ref e, out int f);
+
+            WriteLine($"After: d = {d}, e = {e}, f = {f}");
+
         }
     }
 }
